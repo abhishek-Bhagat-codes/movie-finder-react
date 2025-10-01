@@ -1,10 +1,10 @@
 import React from 'react';
 
-function MovieCard({ movie }) {
+function MovieCard({ movie, onClick }) {
   if (!movie) return null;
 
   return (
-    <li className="movie-card">
+    <li className="movie-card cursor-pointer" onClick={onClick}>
       {/* Poster */}
       <img
         src={
