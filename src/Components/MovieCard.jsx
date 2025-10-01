@@ -10,7 +10,7 @@ function MovieCard({ movie }) {
         src={
           movie.poster_path
             ? `https://image.tmdb.org/t/p/w300${movie.poster_path}`
-            : 'src/assets/no-image.png'
+            : 'src/assets/No-Poster.png'
         }
         alt={movie.title || 'No title'}
         className="w-full h-80 object-cover"
