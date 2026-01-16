@@ -13,6 +13,9 @@ import logo from "./assets/logo.png";
 import hero from "./assets/hero-img.png";
 
 
+
+
+
 const API_OPTIONS ={
   method: 'GET',
   headers: {

@@ -1,5 +1,8 @@
 import React from 'react';
 
+import star from "../assets/star.png"
+import No_Poster from "../assets/No-Poster.png"
+
 function MovieCard({ movie, onClick }) {
   if (!movie) return null;
 
@@ -10,7 +13,7 @@ function MovieCard({ movie, onClick }) {
         src={
           movie.poster_path
             ? `https://image.tmdb.org/t/p/w300${movie.poster_path}`
-            : 'src/assets/No-Poster.png'
+            : No_Poster
         }
         alt={movie.title || 'No title'}
         className="w-full h-80 object-cover"
@@ -29,7 +32,7 @@ function MovieCard({ movie, onClick }) {
           <div className="flex items-center gap-1">
             <img
               className="h-4 w-4"
-              src="src/assets/star.png"
+              src={star}
               alt="Star"
             />
             <span>{movie.vote_average?.toFixed(1)}</span>
