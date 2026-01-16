@@ -7,6 +7,12 @@ import MovieDetails from './Components/MovieDetails.jsx';
 const API_BASE_URL = 'https://api.themoviedb.org/3';
 const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 
+
+// images and icons 
+import logo from "./assets/logo.png";
+import hero from "./assets/hero-img.png";
+
+
 const API_OPTIONS ={
   method: 'GET',
   headers: {
@@ -28,8 +34,8 @@ function Home({
   return (
     <>
       <header className='w-full'>
-        <img src="src/assets/logo.png" className="h-10" alt="Logo" />
-        <img src="src/assets/hero-img.png" className="h-70" alt="Hero-image" />
+        <img src={logo} className="h-10" alt="Logo" />
+        <img src={hero} className="h-70" alt="Hero-image" />
         <h1 className='text-6sasxl'>Find <span className='text-gradient'>Movies</span> You’ll Love Without the Hassle</h1>
         <Search searchIn={searchTerm} setSearchIn={setSearchTerm} setQuery={setQuery} handleSearchIn={handleSearchIn} />
       </header>
