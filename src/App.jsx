@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Routes, Route, useNavigate } from 'react-router-dom';
-import Search from './Components/Search';
-import Spinner from './Components/spinner';
-import MovieCard from './Components/MovieCard';
-import MovieDetails from './Components/MovieDetails';
+import Search from './Components/Search.jsx';
+import Spinner from './Components/Spinner.jsx';
+import MovieCard from './Components/MovieCard.jsx';
+import MovieDetails from './Components/MovieDetails.jsx';
 const API_BASE_URL = 'https://api.themoviedb.org/3';
 const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 
