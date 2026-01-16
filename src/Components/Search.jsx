@@ -1,10 +1,13 @@
 import React from 'react'
 
+// iamge and icone import 
+import searchIcon from "../assets/search.png";
+
 function Search({ searchIn, setSearchIn, handleSearchIn, setQuery }) {
   return (
     <div className="search">
       <div>
-        <img src="src/assets/search.png" alt="Search icon" />
+        <img src={searchIcon} alt="Search icon" />
         <input
           value={searchIn}
           onChange={(e) => setSearchIn(e.target.value)}

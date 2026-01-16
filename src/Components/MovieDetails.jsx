@@ -2,6 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import Spinner from './Spinner.jsx';
 
+// image and icon import 
+import No_Poster from "../assets/No-Poster.png"; 
+
+
 const API_BASE_URL = 'https://api.themoviedb.org/3';
 const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 
@@ -75,7 +79,7 @@ function MovieDetails() {
             src={
               movie.poster_path
                 ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
-                : '/src/assets/No-Poster.png'
+                : No_Poster
             }
             alt={movie.title}
             className="rounded-lg shadow-lg w-full max-h-[350px] object-cover"
